@@ -53,11 +53,48 @@ namespace GeoAnalitica_starwars
                 double X8 = double.Parse(lane4[0]); //22
                 double Y8 = double.Parse(lane4[1]); //23
                 double Z8 = double.Parse(lane4[2]); //24
+                                                    
                 double distancia1 = System.Math.Sqrt(System.Math.Pow((X5 - X1), 2) + System.Math.Pow((Y5 - Y1), 2) + System.Math.Pow((Z5 - Z1), 2));
-                double distancia2 = System.Math.Sqrt(System.Math.Pow((X6 - X2), 2) + System.Math.Pow((Y6 - Y2), 2) + System.Math.Pow((Z6 - Z2), 2));
-                double distancia3 = System.Math.Sqrt(System.Math.Pow((X7 - X3), 2) + System.Math.Pow((Y7 - Y3), 2) + System.Math.Pow((Z7 - Z3), 2));
-                double distancia4 = System.Math.Sqrt(System.Math.Pow((X8 - X4), 2) + System.Math.Pow((Y8 - Y4), 2) + System.Math.Pow((Z8 - Z4), 2));
-                    if (distancia1 <= distancia2 & distancia1 <= distancia3 & distancia1 <= distancia4)
+
+                double distancia5 = System.Math.Sqrt(System.Math.Pow((X6 - X1), 2) + System.Math.Pow((Y6 - Y1), 2) + System.Math.Pow((Z6 - Z1), 2));
+
+                double distancia6 = System.Math.Sqrt(System.Math.Pow((X7 - X1), 2) + System.Math.Pow((Y7 - Y1), 2) + System.Math.Pow((Z7 - Z1), 2));
+
+                double distancia7 = System.Math.Sqrt(System.Math.Pow((X8 - X1), 2) + System.Math.Pow((Y8 - Y1), 2) + System.Math.Pow((Z8 - Z1), 2));
+
+                // -----------------------------------------------------------------------------------------------------------------------------------------------
+
+                double distancia2 = System.Math.Sqrt(System.Math.Pow((X5 - X2), 2) + System.Math.Pow((Y5 - Y2), 2) + System.Math.Pow((Z5 - Z2), 2));
+
+                double distancia8 = System.Math.Sqrt(System.Math.Pow((X6 - X2), 2) + System.Math.Pow((Y6 - Y2), 2) + System.Math.Pow((Z6 - Z2), 2));
+
+                double distancia9 = System.Math.Sqrt(System.Math.Pow((X7 - X2), 2) + System.Math.Pow((Y7 - Y2), 2) + System.Math.Pow((Z7 - Z2), 2));
+
+                double distancia10 = System.Math.Sqrt(System.Math.Pow((X8 - X2), 2) + System.Math.Pow((Y8 - Y2), 2) + System.Math.Pow((Z8 - Z2), 2));
+
+                // -----------------------------------------------------------------------------------------------------------------------------------------------
+
+                double distancia3 = System.Math.Sqrt(System.Math.Pow((X5 - X3), 2) + System.Math.Pow((Y5 - Y3), 2) + System.Math.Pow((Z5 - Z3), 2));
+
+                double distancia11 = System.Math.Sqrt(System.Math.Pow((X6 - X3), 2) + System.Math.Pow((Y6 - Y3), 2) + System.Math.Pow((Z6 - Z3), 2));
+
+                double distancia12 = System.Math.Sqrt(System.Math.Pow((X7 - X3), 2) + System.Math.Pow((Y7 - Y3), 2) + System.Math.Pow((Z7 - Z3), 2));
+
+                double distancia13 = System.Math.Sqrt(System.Math.Pow((X8 - X3), 2) + System.Math.Pow((Y8 - Y3), 2) + System.Math.Pow((Z8 - Z3), 2));
+
+                // -----------------------------------------------------------------------------------------------------------------------------------------------
+                double distancia4 = System.Math.Sqrt(System.Math.Pow((X5 - X4), 2) + System.Math.Pow((Y5 - Y4), 2) + System.Math.Pow((Z5 - Z4), 2));
+
+                double distancia14 = System.Math.Sqrt(System.Math.Pow((X6 - X4), 2) + System.Math.Pow((Y6 - Y4), 2) + System.Math.Pow((Z6 - Z4), 2));
+
+                double distancia15 = System.Math.Sqrt(System.Math.Pow((X7 - X4), 2) + System.Math.Pow((Y7 - Y4), 2) + System.Math.Pow((Z7 - Z4), 2));
+
+                double distancia16 = System.Math.Sqrt(System.Math.Pow((X8 - X4), 2) + System.Math.Pow((Y8 - Y4), 2) + System.Math.Pow((Z8 - Z4), 2));
+
+                // -----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                if (distancia1 <= distancia2 & distancia1 <= distancia3 & distancia1 <= distancia4)
                     {
                         Console.WriteLine("{0:F}", distancia1);
         
@@ -78,7 +115,7 @@ namespace GeoAnalitica_starwars
                     }
               
 
-                    if (distancia4 <= distancia1 & distancia4 <= distancia2 & distancia4 <= distancia3)
+                    if (distancia4 < distancia1 & distancia4 < distancia2 & distancia4 < distancia3)
                     {
                         Console.WriteLine("{0:F}", distancia4);
  
