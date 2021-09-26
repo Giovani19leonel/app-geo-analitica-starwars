@@ -5,14 +5,22 @@ Informe os 4 vértices da Nave Rebelde.
 Informe os 4 vértices da Nave Império.
 
 exemplos de entrada:
-2 -1 -1 
-0 -1 -3  
+2 -1 -1
+
+0 -1 -3 
+
 1 1 -4
+
 1 1 -2
+
 0 5 -1
+
 2 5 1
+
 1 3 2
+
 1 3 0
+
 
 ---------
 
